@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Nellya Sayfutdinova](https://up.htmlacademy.ru/htmlcss/15/user/261201).
-* Наставник: [Александр Игонин] (https://up.htmlacademy.ru/htmlcss/15/user/30996).
+* Наставник: [Александр ✈ Игонин] (https://up.htmlacademy.ru/htmlcss/15/user/30996).
 
 ---
 
