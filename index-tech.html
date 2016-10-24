@@ -2,17 +2,16 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>Техномарт Главная</title>
+    <title>Главная Техномарт</title>
   </head>
   <body>
     <header>
-        <div class="container">
+      <div class="container">
            <div class="index-logo">
               <a class="header-logo"><img src="" width="" height="" alt="Техномарт-логотип"></a>
            </div>
            <div class="search">
-             <label for="search">Поиск:</label>
-             <input type="search" name="search">  
+             <input type="search" name="search" placeholder="Поиск:">  
            </div>
            <div class="mark">
                <a class="mark-link" href="#">Закладки:</a>
@@ -83,9 +82,19 @@
           </div>
           
           <div class="slider">
-            <img src="http://placehold.it/150x100" alt="">
-            <p>Перфораторы</p>
-            Настроящие мужские игрушки
+           <div class="slide slide-1">
+             <b>Перфораторы</b>
+             <p>Настроящие мужские игрушки</p> 
+           </div>
+            <div class="slide slide-2">
+             <img src="http://placehold.it/150x100" alt="слайд1">
+	        </div>
+	        <div class="slide slide-3">
+	         <img src="http://placehold.it/150x100" alt="слайд2">
+	        </div>
+	        <div class="slider-controls">
+	        </div>
+
              <a class="btn" href="#">ОТКРЫТЬ КАТАЛОГ</a>
               
           </div>
@@ -157,7 +166,8 @@
        <div class="services">
           <h2>Сервисы</h2>
           <p>Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
-          <ul>
+          <div class="slides-list">
+             <ul>
               <li>
                   <a class="btn" href="#">Доставка</a>
               </li>
@@ -167,12 +177,12 @@
               <li>
                   <a class="btn" href="#">Кредит</a>
               </li>
-          </ul>
-          
-          <b>Доставка</b>
-          <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!Ведь мы неплохо заработаем, поднимая его на ваш на этаж!</p>
-          
-           
+          </ul> 
+          </div>
+          <div class="slides">
+              <b>Доставка</b>
+              <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!Ведь мы неплохо заработаем, поднимая его на ваш на этаж!</p>
+          </div> 
        </div>
        
        <div class="information">
@@ -202,7 +212,7 @@
                  <br>
                  <textarea name="comment" id="comment-field" rows="10">В свободной форме</textarea>
                   
-                  <button class="btn" type="submit">Отправить</button>
+                 <button class="btn" type="submit">Отправить</button>
               </form>
           </div>
            

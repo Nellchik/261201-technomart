@@ -2,16 +2,16 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>Техномарт Каталог</title>
+    <title>Каталог Техномарт</title>
   </head>
   <body>
     <header>
-        <div class="container">
+      <div class="container">
            <div class="index-logo">
               <a class="header-logo"><img src="" width="" height="" alt="Техномарт-логотип"></a>
            </div>
            <div class="search">
-              <a class="search-link" href="#">Поиск:</a>   
+             <input type="search" name="search" placeholder="Поиск:">   
            </div>
            <div class="mark">
                <a class="mark-link" href="#">Закладки:</a>
@@ -23,7 +23,7 @@
                <a class="btn" href="#">Оформить заказ</a>
            </div>
            <p>Интернет-магазин строительных материалов и инструментов для ремонта</p>
-           <div>
+           <div class="phone">
                +7 (812) 555-05-55<br>
                г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
            </div>
@@ -87,8 +87,12 @@
       </div>
       <div class="filter">
          <form action="#" method="post">
+          <fieldset class="price-select">
+             <legend>ЦЕНА:</legend>   
+          </fieldset>
           
-           <h2>Производители:</h2>
+          <fieldset class="producer">
+          <legend>Производители:</legend>
             <input type="checkbox" name="bosch" id="bosch-field" checked>
             <label for="bosch-field">BOSCH</label>
             
@@ -103,13 +107,16 @@
             
             <input type="checkbox" name="Hitachi" id="Hitachi-field">
             <label for="Hitachi-field">Hitachi</label>
-            
-           <h2>ПИТАНИЕ:</h2>
+           </fieldset>
+           
+           <fieldset class="power">
+           <legend>ПИТАНИЕ:</legend>
             <input type="radio" name="energy" id="battery-field" checked>
             <label for="battery-field">Аккумуляторные</label>
             
             <input type="radio" name="energy" id="net-field">
             <label for="net-field">Сетевые</label>
+           </fieldset>    
             
          <button class="btn" type="submit">Показать</button>    
              
@@ -145,6 +152,13 @@
            </div>
            <a class="btn" href="#">Купить</a>  
         </article>
+         
+        <div class="buy">
+           <a href="#">Купить</a>
+        </div> 
+        <div class="in-mark">
+           <a href="#">В закладки</a>
+        </div> 
           
        </div>
        
@@ -224,5 +238,16 @@
           
       </div>                    
     </footer>
+    
+    <div class="good-in-cart">
+       <b>Товар добавлен в корзину!</b>
+       <div class="make-order">
+           <a class="btn" href="#">ОФОРМИТЬ ЗАКАЗ</a>
+       </div>
+       <div class="continue">
+           <a class="btn" href="#">ПРОДОЛЖИТЬ ПОКУПКИ</a>
+       </div>
+        
+    </div>
   </body>
 </html>
