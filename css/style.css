@@ -1,22 +1,338 @@
 body {
-   font-size: 18px;
-   line-height: 24px;
-   color: #000;
-   font-weight: normal;
-   font-family: "PT Sans", Cuprum;   
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+  font-weight: normal;
+  font-family: "PT Sans", "Cuprum";
+  min-width: 960px;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 10px;
+  width: 940px;
 }
 
 h1 {
-   font-size: 30px;
-   line-height: 30px;
-   color: #32425c;
-   font-weight: normal;
-   font-family: "PT Sans", Cuprum; 
+  font-size: 30px;
+  line-height: 30px;
+  color: #32425c;
+  font-weight: normal;
+  font-family: "PT Sans", "Cuprum";
 }
+
 h2 {
-   font-size: 30px;
-   line-height: 24px;
-   color: #32425c;
-   font-weight: normal;
-   font-family: Cuprum; 
+  font-size: 30px;
+  line-height: 24px;
+  color: #32425c;
+  font-weight: normal;
+  font-family: "Cuprum";
 }
+
+.bottom-header {
+  background-color: #f1f5f7;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.top-header {
+  background-color: #293449;
+}
+
+.header-logo {
+  float: left;
+}
+
+.order {
+  width: 460px;
+  float: right;
+}
+
+.column {
+  float: left;
+  width: 300px;
+  outline: 2px solid aqua;
+  margin-right: 20px;
+}
+
+.user-block {
+  margin-right: 0;
+}
+
+.main-navigation {
+  background-color: #32425c;
+  border-bottom: 5px solid #293449;
+}
+
+.main-navigation ul {
+  list-style-type: none;
+}
+
+.main-navigation li {
+  float: left;
+}
+
+.main-navigation a {
+  display: block;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 49px;
+  text-decoration: none;
+  color: white;
+}
+
+.promo-block {
+  margin-top: 40px;
+  margin-bottom: 53px;
+}
+
+.promo-item {
+  width: 300px;
+  margin-top: 20px;
+  min-height: 125px;
+  outline: 2px solid aqua;
+}
+.promo-top .promo-item {
+  float: left;
+  margin-right: 20px;
+}
+.promo-top .promo-item-3 {
+  margin-right: 0;
+}
+.promo-bottom-left {
+  float: left;
+  margin-top: 20px;
+}
+
+.promo-bottom-right {
+  float: right;
+}
+
+.slide-2 {
+  display: none;
+}
+.pop-content {
+  float: left;
+}
+
+.pop-btn {
+  float: right;
+  background-color: #ee3643;
+  margin-top: 25px;
+  text-decoration: none;
+  color: white;
+}
+
+.pop {
+  background-color: #f7f3ec;
+  text-transform: uppercase;
+}
+
+.popular-items .catalog-item {
+  float: left;
+  width: 218px;
+  margin-right: 20px;
+  border: 1px solid #e5e5e5;
+}
+
+article.catalog-item:last-child {
+  margin-right: 0;
+}
+
+.brands-photo a {
+  float: left;
+  width: 218px;
+  height: 145px;
+  border: 1px solid #e5e5e5;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.brands-photo a:last-child {
+  margin-right: 0;
+}
+
+.brands-photo a:nth-child(4) {
+  margin-right: 0;
+}
+.services {
+  background-color: #f2f6f8;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.information-left {
+  float: left;
+  width: 540px;
+}
+
+.information-right {
+  float: right;
+  width: 300px;
+}
+
+.footer-top {
+  background-color: #32425c;
+}
+
+.footer-top-navigation ul {
+  list-style-type: none;
+}
+
+.footer-top-navigation li {
+  float: left;
+  outline: 2px solid aqua;
+}
+
+.footer-top-navigation a {
+  display: block;
+  padding-right: 50px;
+  margin-top: 40px;
+  color: white;
+  text-decoration: none;
+}
+
+a.last {
+  padding-right: 0;
+} 
+
+.footer-logo {
+  float: left;
+  width: 380px;
+}
+
+.footer-logo p {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  color: white;
+  outline: 2px solid aqua;
+}
+
+.footer-bottom-navigation ul {
+  list-style-type: none;
+}
+
+.footer-bottom-navigation li {
+  float: left;
+  outline: 2px solid aqua;
+}
+
+.footer-bottom-navigation a {
+  display: block;
+  padding-right: 50px;
+  margin-top: 40px;
+  margin-left: 5px;
+  color: #ffd180;
+  text-decoration: none;
+}
+
+
+
+.footer-bottom {
+  background-color: #293449;
+}
+
+.footer-info {
+  float: left;
+  width: 300px;
+  margin-right: 60px;
+  outline: 2px solid aqua;
+}
+
+.footer-social {
+  float: left;
+  width: 160px;
+  outline: 2px solid aqua;
+}
+
+.footer-connect {
+  float: left;
+  width: 140px;
+  outline: 2px solid aqua;
+}
+
+.footer-copyright {
+  float: right;
+  width: 140px;
+  outline: 2px solid aqua;
+}
+
+.breadcrumbs ul {
+  list-style-type: none;
+}
+
+.breadcrumbs li {
+  float: left;
+}
+
+.breadcrumbs a {
+  display: block;
+  padding-right: 50px;
+}
+
+.drill {
+  background-color: #f2f6f8;
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+
+.filter-block {
+  float: left;
+  background-color: #f7f3ec;
+  width: 220px;
+  margin-right: 20px;
+}
+
+.sorting-block ul {
+  list-style-type: none;
+}
+.sorting-block li {
+  float: left;
+  padding-right: 30px;
+}
+
+.filter-desk {
+  float: left;
+  width: 220px;
+}
+
+.catalog {
+  float: right;
+  width: 700px;
+}
+
+.catalog-item-page2 {
+  float: left;
+  width: 218px;
+  min-height: 318px;
+  border: 1px solid #e5e5e5;
+  margin-right: 20px;
+}
+
+article.catalog-item-page2:last-child {
+  margin-right: 0;
+}
+
+.pagination a {
+  display: inline-block;
+  min-width: 37px;
+  margin-top: 53px;
+  margin-bottom: 63px;
+  margin-right: 10px;
+  border: 1px solid #e5e5e5;
+}
+
+
+.about-drill {
+  background-color: #f2f6f8;
+  padding-top: 70px;
+  padding-bottom: 77px;
+}
+
+ 
