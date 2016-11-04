@@ -49,6 +49,10 @@ h2 {
   float: left;
 }
 
+.search {
+  float: left;
+}
+
 .order {
   width: 460px;
   float: right;
@@ -66,6 +70,7 @@ h2 {
 }
 
 .main-navigation {
+  min-height: 60px;
   background-color: #32425c;
   border-bottom: 5px solid #293449;
 }
@@ -81,7 +86,6 @@ h2 {
 .main-navigation a {
   display: block;
   padding-top: 20px;
-  padding-bottom: 20px;
   padding-right: 49px;
   text-decoration: none;
   color: white;
@@ -98,13 +102,16 @@ h2 {
   min-height: 125px;
   outline: 2px solid aqua;
 }
+
 .promo-top .promo-item {
   float: left;
   margin-right: 20px;
 }
+
 .promo-top .promo-item-3 {
   margin-right: 0;
 }
+
 .promo-bottom-left {
   float: left;
   margin-top: 20px;
@@ -117,6 +124,7 @@ h2 {
 .slide-2 {
   display: none;
 }
+
 .pop-content {
   float: left;
 }
@@ -134,15 +142,24 @@ h2 {
   text-transform: uppercase;
 }
 
-.popular-items .catalog-item {
+.catalog-item {
   float: left;
   width: 218px;
+  min-height: 318px;
   margin-right: 20px;
+  margin-bottom: 20px;
+  margin-top: 20px;
   border: 1px solid #e5e5e5;
 }
 
-article.catalog-item:last-child {
+article.catalog-item:last-child,
+article.catalog-item:nth-child(3),
+article.catalog-item:nth-child(6) {
   margin-right: 0;
+}
+
+.popular-items article.item-3 {
+  margin-right: 20px;
 }
 
 .brands-photo a {
@@ -161,10 +178,45 @@ article.catalog-item:last-child {
 .brands-photo a:nth-child(4) {
   margin-right: 0;
 }
+
 .services {
   background-color: #f2f6f8;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 68px;
+  padding-bottom: 103px;
+}
+
+.services-top {
+  width: 460px;
+}
+
+.services-bottom-slide {
+  float: left;
+  width: 300px;
+}
+
+.services-bottom .list {
+  display: block;
+  width: 240px;
+  margin-right: 80px;
+  outline: 2px solid aqua;
+}
+
+.list ul {
+  list-style-type: none;
+}
+
+.list a {
+  text-decoration: none;
+}
+
+.services-slide-2,
+.services-slide-3 {
+  display: none;
+}
+
+.services-bottom .slide1 {
+  width: 300px;
+  outline: 2px solid aqua;
 }
 
 .information-left {
@@ -177,8 +229,26 @@ article.catalog-item:last-child {
   width: 300px;
 }
 
+.map-big {
+  display: none;
+}
+
+.feedback {
+  display: none;
+}
+
 .footer-top {
   background-color: #32425c;
+}
+
+.footer-logo {
+  float: left;
+  width: 340px;
+}
+
+.footer-top-right {
+  float: right;
+  width: 600px;
 }
 
 .footer-top-navigation ul {
@@ -193,23 +263,11 @@ article.catalog-item:last-child {
 .footer-top-navigation a {
   display: block;
   padding-right: 50px;
-  margin-top: 40px;
   color: white;
   text-decoration: none;
 }
 
-a.last {
-  padding-right: 0;
-} 
-
-.footer-logo {
-  float: left;
-  width: 380px;
-}
-
 .footer-logo p {
-  margin-top: 50px;
-  margin-bottom: 50px;
   color: white;
   outline: 2px solid aqua;
 }
@@ -226,23 +284,28 @@ a.last {
 .footer-bottom-navigation a {
   display: block;
   padding-right: 50px;
-  margin-top: 40px;
-  margin-left: 5px;
   color: #ffd180;
   text-decoration: none;
 }
 
-
+a.last {
+  padding-right: 0;
+}
 
 .footer-bottom {
   background-color: #293449;
 }
 
-.footer-info {
+.footer-bottom-left {
   float: left;
   width: 300px;
   margin-right: 60px;
   outline: 2px solid aqua;
+}
+
+.footer-bottom-right {
+  float: right;
+  width: 560px;
 }
 
 .footer-social {
@@ -254,12 +317,15 @@ a.last {
 .footer-connect {
   float: left;
   width: 140px;
+  min-height: 50px;
+  margin-right: 50px;
   outline: 2px solid aqua;
 }
 
 .footer-copyright {
-  float: right;
+  float: left;
   width: 140px;
+  min-height: 50px;
   outline: 2px solid aqua;
 }
 
@@ -292,8 +358,10 @@ a.last {
 .sorting-block ul {
   list-style-type: none;
 }
+
 .sorting-block li {
   float: left;
+  background-color: #f7f3ec;
   padding-right: 30px;
 }
 
@@ -307,16 +375,8 @@ a.last {
   width: 700px;
 }
 
-.catalog-item-page2 {
-  float: left;
-  width: 218px;
-  min-height: 318px;
-  border: 1px solid #e5e5e5;
-  margin-right: 20px;
-}
-
-article.catalog-item-page2:last-child {
-  margin-right: 0;
+.pagination {
+  width: 280px;
 }
 
 .pagination a {
@@ -328,11 +388,8 @@ article.catalog-item-page2:last-child {
   border: 1px solid #e5e5e5;
 }
 
-
 .about-drill {
   background-color: #f2f6f8;
   padding-top: 70px;
   padding-bottom: 77px;
 }
-
- 
