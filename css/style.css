@@ -710,9 +710,6 @@ article.catalog-item:nth-child(6) {
   margin-bottom: 10px;
   
 }
-.catalog-item .no-discount {
-  margin-bottom: 45px;
-}
 
 .catalog-item .discount {
   min-height: 20px;
