@@ -44,6 +44,7 @@ h2 {
 }
 
 .top-header {
+  font-family:"Cuprum", sans-serif; 
   font-size: 17px;
   line-height: 18px;
   background-color: #293449;
@@ -62,19 +63,62 @@ h2 {
   margin: 0;
   padding: 0;
   width: 260px;
+  color: #ffffff;
   background-color: #293449;
 }
 
-.search ::before {
+
+.search input {
+  display: block;
+  font-family:"Cuprum", sans-serif; 
+  font-size: 17px;
+  color: #ffffff;
+  height: 42px;
+  width: 269px;
+  
+  padding-left: 40px;
+  border: none;
+  background-color: #293449;
+}
+
+.search::before {
   content: "";
   position: absolute;
-  top: 11px;
-  left: 21px;
+  top: 13px;
+  left: 14px;
 
   width: 17px;
   height: 17px;
+  background: url("../img/icon-search.png") no-repeat 0 0;
+  opacity: 0.3;  
+}
+
+.search:hover::before {
+  opacity: 1.0; 
+}
+
+.search input:hover {
+  background: #212a3a;
+}
+
+.search input:focus {
+ 
+  background-color: #ffffff;
+
+  font-family:"Cuprum", sans-serif; 
+  font-size: 17px;
+  border: none;
+}
+
+.search:focus::before {
+  content: "";
+  position: absolute;
+  top: 13px;
+  left: 14px;
+  width: 17px;
+  height: 17px;
   background: url("../img/sprite.png") no-repeat;
-  background-position: -585px -5px;
+  background-position: -612px -5px;
 }
 
 .order {
@@ -562,7 +606,7 @@ h2 {
 
 .pop {
   background-color: #f7f3ec;
-  
+  margin-bottom: 20px;
 }
 
 .popular-items {
@@ -575,9 +619,9 @@ h2 {
   float: left;
   width: 217px;
   min-height: 318px;
-  margin-right: 20px;
-  margin-bottom: 10px;
-  margin-top: 10px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  
   border: 1px solid #e5e5e5;
   line-height: 20px;
   font-weight: bold;
@@ -585,15 +629,10 @@ h2 {
   font-size: 18px;
 }
 
-article.catalog-item:last-child,
-article.catalog-item:nth-child(3),
-article.catalog-item:nth-child(6) {
-  margin-right: 0;
+.catalog-items .row {
+  margin-left: -20px;
 }
 
-.popular-items article.item-3 {
-  margin-right: 20px;
-}
 
 .catalog-item image {
   height: 168px;
@@ -775,33 +814,29 @@ article.catalog-item:nth-child(6) {
 .services {
   background: #f2f6f8;
   padding-top: 68px;
-  padding-bottom: 103px;
+  
 }
 
 .services-top {
   width: 460px;
 }
- 
-.services-bottom {
-  
-}
 
 h3 {
+  margin: 0;
+  font-family: "Cuprum", sans-serif;
   font-size: 36px;
   line-height: 24px;
   text-transform: uppercase;
   color: #32425c;
 }
 
-.services-bottom-slide {
+.services-bottom-slides {
   float: left;
-  width: 300px;
-  background: url("../img/service-car.png") no-repeat;
-  background-position: 700px 230px;
+  width: 620px; 
 }
 
 .services-bottom .list {
-  
+  float: left;
   width: 240px;
   margin-right: 80px;
   
@@ -837,14 +872,30 @@ h3 {
 
 .services-top p,
 .services-bottom-slide p {
+  font-family: "Cuprum", sans-serif;
   font-size: 13px;
   line-height: 24px;
   color: #000000;
+  padding-bottom: 50px;
 }
 
-.slide2,
-.slide3 {
+.slide1 {
+  background: url("../img/service-car.png") no-repeat 150px -11px;
+  height: 280px;
+  
+}
+
+.slide2 {
   display: none;
+  background: url("../img/service-guarantee.png") no-repeat 225px 0;
+  height: 280px;
+  
+}
+
+.slide3 {
+display: none;
+  background: url("../img/service-credit.png") no-repeat 110px 0;
+  height: 280px;
 }
 
 .information {
@@ -1074,6 +1125,10 @@ a.last {
   width: 700px;
 }
 
+.catalog .row {
+  margin-left: -20px;
+}
+
 .pagination {
   width: 280px;
   margin-left: 435px;
@@ -1093,3 +1148,5 @@ a.last {
   padding-top: 70px;
   padding-bottom: 77px;
 }
+
+font-family:"Cuprum", sans-serif;
