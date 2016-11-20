@@ -20,7 +20,7 @@
           </div>
         <div class="order"> 
         <a class="mark-link" href="#">Закладки: 0</a> 
-        <a class="cart-link" href="#">Корзина: 10</a> 
+        <a class="cart-link goods-in-cart" href="#">Корзина: 10</a> 
         <a class="btn-order" href="#">Оформить заказ</a> 
         </div>
       </div>
@@ -58,14 +58,12 @@
   <main>
     <div class="breadcrumbs">
       <div class="container clearfix">
-        <ul>
-          <li>
-            <a href="index.html" class="home"></a>
-          </li>
-          <li> <a href="#">Каталог</a> </li>
-          <li> <a href="#">Инструмент</a> </li>
-          <li> <a>Перфораторы</a> </li>
-        </ul>
+       <a href="index.html" class="home"></a>
+  
+          <a href="#">Каталог</a> 
+          <a href="#">Инструмент</a> 
+          <a class="active">Перфораторы</a>
+        
       </div>
     </div>
     <div class="drill container">
@@ -74,12 +72,16 @@
     <div class="container clearfix">
       <div class="filter-block">ФИЛЬТР:</div>
       <div class="sorting-block">
-        <ul class="clearfix">
+        <ul class="">
           <li> <b>СОРТИРОВКА:</b> </li>
-          <li> <a>ПО ЦЕНЕ</a> </li>
-          <li> <a href="#">ПО ТИПУ</a> </li>
-          <li> <a href="#">ПО ФУНКЦИОНАЛУ</a> </li>
-        </ul> <span class="triangle1-icon"></span> <span class="triangle2-icon"></span> 
+          <li> <a class="active sort-price">ПО ЦЕНЕ</a> </li>
+          <li> <a href="#" class="sort-type">ПО ТИПУ</a> </li>
+          <li> <a href="#" class="sort-function">ПО ФУНКЦИОНАЛУ</a> </li>
+        </ul> 
+      <div class="triangle">
+        <span class="triangle-up active"> </span> 
+        <span class="triangle-down"> </span>
+      </div>
       </div>
     </div>
     <div class="container clearfix">
@@ -87,16 +89,24 @@
         <form action="#" method="get">
           <fieldset class="filter price-select">
             <legend>цена:</legend>
-            <div class="range">
-              <div class="scale"></div>
-              <div class="progress"></div>
+            <div class="range-filter">
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar"></div>
+                </div>
+                <div class="toggle toggle-min"></div>
+                <div class="toggle toggle-max"></div>
+              </div>
+            <div class="price-controls">
+              <label class="min-price"><input name="min-price" type="text" value="0">—</label>
+              <label class="max-price"><input name="max-price" type="text" value="30000"></label>
             </div>
-            <div class="filter price-input">
-              <input type="text" placeholder="0">
-              <input type="text" placeholder="30000"> </div>
+            </div>
           </fieldset>
           <fieldset class="filter producer">
+            <div class="producer-list">
             <legend>производители:</legend>
+            
             <ul>
               <li>
                 <input type="checkbox" name="bosch" id="bosch-field" checked>
@@ -119,8 +129,10 @@
                 <label for="Hitachi-field">Hitachi</label>
               </li>
             </ul>
+            </div>
           </fieldset>
           <fieldset class="filter power">
+           <div class="power-list">
             <legend>питание:</legend>
             <ul>
               <li>
@@ -132,8 +144,11 @@
                 <label for="net-field">Сетевые</label>
               </li>
             </ul>
+            </div>
           </fieldset>
-          <button class="btn" type="submit">Показать</button>
+          
+          <button class="btn filter-btn" type="submit">Показать</button>
+          
         </form>
       </div>
       
@@ -211,7 +226,7 @@
           </div>
         </article>
         <article class="catalog-item"> 
-         <div class="image"><img src="img/bfg6000.jpg" width="127" height="123" alt="BOSCH BFG 6000"></div>
+         <div class="image"><img src="img/bfg6000.jpg" width="127" height="113" alt="BOSCH BFG 6000"></div>
           <div class="title"><b>Перфоратор BOSCH BFG 6000</b></div>
            <div class="discount"><s>30500 Р.</s></div>
           <div class="price"> 25500 Р. </div> 
@@ -235,12 +250,12 @@
       <a class="current">1</a> 
       <a href="#2">2</a> 
       <a href="#3">3</a> 
-      <a href="#4">Следующая</a> 
+      <a href="#4" class="next">Следующая</a> 
     </div>
     <div class="about-drill">
       <div class="container"> <b>Пара слов о перфораторах</b>
-        <p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.</p>
-        <p>Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
+        <p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
+        Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
       </div>
     </div>
   </main>
@@ -279,9 +294,9 @@
         </div>
         <div class="footer-bottom-right clearfix">
         <section class="footer-social">
-          <a class="social-btn social-btn-vk" href="#"> <img src="img/icon-social-vk.png" width="20" height="12" alt="vk"> </a>
-          <a class="social-btn social-btn-fb" href="#"> <img src="img/icon-social-fb.png" width="10" height="18" alt="fb"> </a>
-          <a class="social-btn social-btn-inst" href="#"> <img src="img/icon-social-inst.png" width="17" height="17" alt="inst"> </a>
+          <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+          <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
         </section>
         <section class="footer-connect">
           Обратная связь: <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a> </section>
