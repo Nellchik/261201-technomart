@@ -67,17 +67,18 @@
       </div>
       <div class="promo-bottom clearfix">
         <div class="promo-bottom-left">
+         <div class="slider-controls">
+              <button type="button" class="active"></button>
+              <button type="button"></button>       
+          </div>
+          <div class="slider-item-left">  </div>
+          <div class="slider-item-right">  </div>
           <div class="slide slide-1"> 
             <img src="img/slider1.jpg" width="620" height="266" alt="слайд1">
             <b>Перфораторы</b>
             <p>Настоящие мужские игрушки</p>
             <a class="btn btn-catalog-open" href="#">открыть каталог</a>
-            <div class="slider-item-left">  </div>
-            <div class="slider-item-right">  </div>
-            <div class="slider-controls">
-              <i class="active"></i>
-              <i></i>       
-          </div>
+            
           </div>  
            
           <div class="slide slide-2"> 
@@ -85,16 +86,8 @@
               <b>Дрели</b>
               <p>Соседям на радость!</p>
               <a class="btn btn-catalog-open" href="#">открыть каталог</a>
-              <div class="slider-item-left">  </div>
-              <div class="slider-item-right">  </div>
-            <div class="slider-controls">
-              <i></i>
-              <i class="active"></i>
-            
           </div>
           </div>
-          
-         </div>
         
         <div class="promo-bottom-right">
           <div class="promo-item promo-item-4"> <b>Скидки 50%</b> <a class="promo-btn" href="#">на 350 товаров</a> </div>
@@ -113,7 +106,7 @@
       <div class="catalog-items clearfix">
        <div class="row">
         <article class="catalog-item"> 
-         <div class="image"><img src="img/bfg9000.jpg" width="127" height="113" alt="BOSCH BFG 9000"></div>
+         <div class="image"><img src="img/bfg9000.jpg" width="210" height="136" alt="BOSCH BFG 9000"></div>
          <div class="title"><b>Перфоратор BOSCH BFG 9000</b></div> 
          <div class="discount"><s>32500 Р.</s></div>
           <div class="price">25500 Р.</div>
@@ -123,7 +116,7 @@
           </div>
         </article>
         <article class="catalog-item"> 
-         <div class="image"><img src="img/bfg3000.jpg" width="127" height="113" alt="BOSCH BFG 3000"></div> 
+         <div class="image"><img src="img/bfg3000.jpg" width="210" height="136" alt="BOSCH BFG 3000"></div> 
          <div class="title"><b>Перфоратор BOSCH BFG 3000</b></div>
           <div class="discount"><s>22500 Р.</s></div>
           <div class="price">15500 Р.</div>
@@ -131,7 +124,7 @@
           <a href="#" class="bookmark">В закладки</a> </div>
         </article>
         <article class="catalog-item item-3"> 
-         <div class="image"><img src="img/bfg6000.jpg" width="127" height="113" alt="BOSCH BFG 6000"></div> 
+         <div class="image"><img src="img/bfg6000.jpg" width="210" height="136" alt="BOSCH BFG 6000"></div> 
          <div class="title"><b>Перфоратор BOSCH BFG 6000</b></div>
          <div class="discount"><s>30500 Р.</s></div>
           <div class="price">25500 Р.</div>
@@ -140,7 +133,7 @@
         </article>
         <article class="catalog-item"> 
           <div class="flag flag-new"></div>
-          <div class="image"><img src="img/bfg2000.jpg" width="127" height="113" alt="BOSCH BFG 2000"></div> 
+          <div class="image"><img src="img/bfg2000.jpg" width="210" height="136" alt="BOSCH BFG 2000"></div> 
           <div class="title no-discount"><b>Перфоратор BOSCH BFG 2000</b></div>
           <div class="discount"><s></s></div>
           <div class="price">12500 Р.</div>
@@ -206,7 +199,7 @@
       <div class="information-left">
         <h2>Компания «Техномарт»</h2>
         <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкномить на гастарбайтерах.</p>
-        <p>Мы можем доставить ваш товар в самые отдаленные точки России!<br>Техномарт работает со многими транспортными компаниями:</p>
+        <p>Мы можем доставить ваш товар в самые отдаленные точки России! <br>Техномарт работает со многими транспортными компаниями:</p>
         <ul>
           <li>Деловые линии</li>
           <li>Автотрейдинг</li>
@@ -221,16 +214,25 @@
           <img src="img/map.jpg" width="300" height="158" alt="Карта-маленькая"> 
         </a> 
         <a class="btn" href="#">Заблудились? Напишите нам!</a>
-        <div class="map-big"> <img src="img/map-big.jpg" width="970" height="476" alt="Карта-большая"> </div>
+        <div class="map-big"> 
+        <img src="img/map-big.jpg" width="940" height="440" alt="Карта-большая"> 
+        <button type="button" class="cross-close"></button>
+        </div>
+        
         <div class="feedback">
           <form action="#" method="post">
-            <label for="name-field">Ваше имя:</label>
-            <input type="text" name="e-mail" id="e-mail-field" value="Представьтесь, пожалуйста">
-            <label for="e-mail-field">Ваш e-mail:</label>
-            <input type="text" name="name" id="name-field" value="Для отправки ответа">
+            <div class="name-field">
+              <label for="name-field">Ваше имя:</label>
+            <input type="text" name="e-mail" id="name-field" value="Представьтесь, пожалуйста">
+            </div>
+            <div class="e-mail-field">
+              <label for="e-mail-field">Ваш e-mail:</label>
+            <input type="text" name="name" id="e-mail-field" value="Для отправки ответа">
+            </div>
+            
             <label for="comment-field">Текст письма:</label>
             <textarea name="comment" id="comment-field" rows="10">В свободной форме</textarea>
-            <button class="btn" type="submit">Отправить</button>
+            <div><button class="btn" type="submit">Отправить</button></div>
           </form>
         </div>
       </div>
