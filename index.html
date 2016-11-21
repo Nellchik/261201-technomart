@@ -215,26 +215,33 @@
         </a> 
         <a class="btn" href="#">Заблудились? Напишите нам!</a>
         <div class="map-big"> 
-        <img src="img/map-big.jpg" width="940" height="440" alt="Карта-большая"> 
+        <img src="img/map-big.jpg" width="940" height="447" alt="Карта-большая"> 
         <button type="button" class="cross-close"></button>
         </div>
         
         <div class="feedback">
           <form action="#" method="post">
+           <div class="feedback-field">
             <div class="name-field">
               <label for="name-field">Ваше имя:</label>
             <input type="text" name="e-mail" id="name-field" value="Представьтесь, пожалуйста">
             </div>
+            
             <div class="e-mail-field">
               <label for="e-mail-field">Ваш e-mail:</label>
             <input type="text" name="name" id="e-mail-field" value="Для отправки ответа">
             </div>
-            
+
             <label for="comment-field">Текст письма:</label>
             <textarea name="comment" id="comment-field" rows="10">В свободной форме</textarea>
-            <div><button class="btn" type="submit">Отправить</button></div>
+            </div>
+            <div class="submission-btn">
+            <button class="btn" type="submit">Отправить</button>
+            </div>
           </form>
+          <button type="button" class="cross-close"></button>
         </div>
+        
       </div>
     </div>
   </main>
