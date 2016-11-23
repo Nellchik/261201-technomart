@@ -1144,6 +1144,14 @@ h3 {
   border-top: 7px solid #ee3643;
 }
 
+.feedback-show {
+  display: block;
+}
+
+.map-big-show {
+  display: block;
+}
+
 .feedback-field {
   padding: 35px 51px;
 }
@@ -1195,7 +1203,18 @@ h3 {
   border: none;
 }
 
-.feedback .cross-close {
+.feedback .cross-close-feedback {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 23px;
+  height: 23px;
+  background: url("../img/sprite.png") no-repeat -54px -5px;
+  z-index: 100;
+  border: none;
+}
+
+.map-big .cross-close-map {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -1213,14 +1232,18 @@ h3 {
 
 .goods-in-cart {
   display: none;
-  position: absolute;
-  top: 50%;
+  position: fixed;
+  top: 36%;
   left: 50%;
   width: 568px;
   height: 190px;
   margin-left: -323px;
   background: #ffffff;
   border-top: 7px solid #ee3643;
+}
+
+.goods-in-cart-show {
+  display: block;
 }
 
 .goods-in-cart a {
@@ -1266,6 +1289,8 @@ h3 {
   z-index: 100;
   border: none;
 }
+
+
 
 .main-footer {
   font-family: "Cuprum", "Arial", sans-serif;
