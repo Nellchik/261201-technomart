@@ -1450,11 +1450,11 @@ a.last {
 }
 
 .social-btn-fb {
-  background-position: -660px -7px;
+  background-position: -659px -6px;
 }
 
 .social-btn-fb:hover {
-  background: #ee3643 url("../img/sprite.png") no-repeat -622px 5px;
+  background: #ee3643 url("../img/sprite.png") no-repeat -623px 5px;
 }
 
 .social-btn-inst {
