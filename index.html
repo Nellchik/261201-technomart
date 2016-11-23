@@ -13,10 +13,14 @@
   <header class="main-header">
     <div class="top-header">
       <div class="container clearfix">
-        <div class="header-logo"><a>Техномарт</a></div>
+        <div class="header-logo">
+          <a><img src="img/logo.png" width="110" height="18" alt="Техномарт"></a>
+        </div>
         <div class="search">
-          <input type="search" name="search" placeholder="Поиск:" id="search-field">
-          <label for="search-field"></label>
+          <form action="#" method="get">
+            <input type="search" name="search" placeholder="Поиск:" id="search-field">
+            <label for="search-field"></label>
+          </form>
         </div>
         <div class="order"> <a class="mark-link" href="#">Закладки: 0</a> <a class="cart-link" href="#">Корзина: 0</a> <a class="btn-order" href="#">Оформить заказ</a> </div>
       </div>
@@ -34,9 +38,9 @@
       </div>
       <nav class="main-navigation container">
         <ul class="clearfix">
-          <li> <a href="#">Главная</a> </li>
+          <li> <a href="index.html">Главная</a> </li>
           <li> <a href="#">Компания</a> </li>
-          <li> <a href="#">Каталог</a> </li>
+          <li> <a href="catalog.html">Каталог</a> </li>
           <li> <a href="#">Новости</a> </li>
           <li> <a href="#">Спецпредложения</a> </li>
           <li> <a href="#">Доставка</a> </li>
@@ -61,10 +65,10 @@
           </div>
           <div class="slider-item-left"> </div>
           <div class="slider-item-right"> </div>
-          <div class="slide slide-1"> <img src="img/slider1.jpg" width="620" height="266" alt="слайд1"> <b>Перфораторы</b>
-            <p>Настоящие мужские игрушки</p> <a class="btn btn-catalog-open" href="#">открыть каталог</a> </div>
-          <div class="slide slide-2"> <img src="img/slider2.jpg" width="620" height="266" alt="слайд2"> <b>Дрели</b>
-            <p>Соседям на радость!</p> <a class="btn btn-catalog-open" href="#">открыть каталог</a> </div>
+          <div class="slide slide-1"> <b>Перфораторы</b>
+            <p>Настоящие мужские игрушки</p> <a class="btn btn-catalog-open" href="catalog.html">открыть каталог</a> </div>
+          <div class="slide slide-2"> <b>Дрели</b>
+            <p>Соседям на радость!</p> <a class="btn btn-catalog-open" href="catalog.html">открыть каталог</a> </div>
         </div>
         <div class="promo-bottom-right">
           <div class="promo-item promo-item-4"> <b>Скидки 50%</b> <a class="promo-btn" href="#">на 350 товаров</a> </div>
@@ -115,14 +119,16 @@
         <div class="pop-content">
           <h2>Популярные Производители:</h2></div> <a class="pop-btn" href="#">все производители</a> </div>
       <div class="brands-photo clearfix">
-        <a href="#"> <img src="img/brand-bosh.png" width="220" height="145" alt="bosch"> </a>
-        <a href="#"> <img src="img/brand-makita.png" width="220" height="145" alt="Makita"> </a>
-        <a href="#"> <img src="img/brand-dewalt.png" width="220" height="145" alt="DeWALT"> </a>
-        <a href="#"> <img src="img/brand-interskol.png" width="220" height="145" alt="Интерскол"> </a>
-        <a href="#"> <img src="img/brand-hitachi.png" width="220" height="145" alt="Hitachi"> </a>
-        <a href="#"> <img src="img/brand-lg.png" width="220" height="145" alt="LG"> </a>
-        <a href="#"> <img src="img/brand-aeg.png" width="220" height="145" alt="AEG"> </a>
-        <a href="#"> <img src="img/brand-metabo.png" width="220" height="145" alt="Metabo"> </a>
+        <div class="row">
+          <a href="#"> <img src="img/brand-bosh.png" width="220" height="145" alt="bosch"> </a>
+          <a href="#"> <img src="img/brand-makita.png" width="220" height="145" alt="Makita"> </a>
+          <a href="#"> <img src="img/brand-dewalt.png" width="220" height="145" alt="DeWALT"> </a>
+          <a href="#"> <img src="img/brand-interskol.png" width="220" height="145" alt="Интерскол"> </a>
+          <a href="#"> <img src="img/brand-hitachi.png" width="220" height="145" alt="Hitachi"> </a>
+          <a href="#"> <img src="img/brand-lg.png" width="220" height="145" alt="LG"> </a>
+          <a href="#"> <img src="img/brand-aeg.png" width="220" height="145" alt="AEG"> </a>
+          <a href="#"> <img src="img/brand-metabo.png" width="220" height="145" alt="Metabo"> </a>
+        </div>
       </div>
     </div>
     <div class="services">
@@ -197,15 +203,17 @@
   <footer class="main-footer">
     <div class="footer-top">
       <div class="container clearfix">
-        <div class="footer-logo">
-          <a> <img src="img/footer-logo.png" width="220" height="68" alt="Техномарт-логотип"> </a>
+        <div class="footer-top-left">
+          <div class="footer-logo">
+            <a href="index.html"> <img src="img/footer-logo.png" width="138" height="21" alt="Техномарт"> </a>
+          </div>
           <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 +7 (812) 555-05-55</p>
         </div>
         <div class="footer-top-right">
           <ul class="footer-top-navigation clearfix">
             <li> <a href="#">Компания</a> </li>
             <li> <a href="#">Новости</a> </li>
-            <li> <a href="#">Каталог</a> </li>
+            <li> <a href="catalog.html">Каталог</a> </li>
             <li> <a href="#">Доставка</a> </li>
             <li> <a class="last" href="#">Контакты</a> </li>
           </ul>
