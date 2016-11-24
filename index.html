@@ -60,16 +60,19 @@
       </div>
       <div class="promo-bottom clearfix">
         <div class="promo-bottom-left">
-          <div class="slider-controls">
+          
+          <div class="show slide slide-1"> <b>Перфораторы</b>
+            <p>Настоящие мужские игрушки</p> <a class="btn btn-catalog-open" href="catalog.html">открыть каталог</a> 
+            
+            </div>
+          <div class="slide slide-2"> <b>Дрели</b>
+            <p>Соседям на радость!</p> <a class="btn btn-catalog-open" href="catalog.html">открыть каталог</a> </div>
+            <div class="slider-controls">
             <button type="button" class="active"></button>
-            <button type="button"></button>
+            <button type="button" class="slide-switch"></button>
           </div>
           <div class="slider-item-left"> </div>
           <div class="slider-item-right"> </div>
-          <div class="slide slide-1"> <b>Перфораторы</b>
-            <p>Настоящие мужские игрушки</p> <a class="btn btn-catalog-open" href="catalog.html">открыть каталог</a> </div>
-          <div class="slide slide-2"> <b>Дрели</b>
-            <p>Соседям на радость!</p> <a class="btn btn-catalog-open" href="catalog.html">открыть каталог</a> </div>
         </div>
         <div class="promo-bottom-right">
           <div class="promo-item promo-item-4"> <b>Скидки 50%</b> <a class="promo-btn" href="#">на 350 товаров</a> </div>
@@ -113,6 +116,11 @@
             <div class="action"> <a href="#" class="buy">Купить</a> <a href="#" class="bookmark">В закладки</a> </div>
           </article>
         </div>
+        <div class="goods-in-cart">
+      <div class="done-in-cart">Товар добавлен в корзину!</div>
+      <div class="submission-btn"> <a class="btn btn-left" href="#">Оформить заказ</a> <a class="btn btn-right" href="#">Продолжить покупки</a> </div>
+      <button type="button" class="cross-close-cart"></button>
+    </div>
       </div>
     </div>
     <div class="popular-brands container">
@@ -178,19 +186,23 @@
         <p>Вы можете забрать товар сами, заехав в наш офис:</p>
         <a class="map-small" href="#"> <img src="img/map.jpg" width="300" height="158" alt="Карта-маленькая"> </a> 
         <a class="btn write-us" href="#">Заблудились? Напишите нам!</a>
-        <div class="map-big"> <img src="img/map-big.jpg" width="940" height="447" alt="Карта-большая">
+        <div class="map-big"> 
           <button type="button" class="cross-close-map"></button>
+          <iframe width="940" height="447" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/search?q=%D0%91%D0%BE%D0%BB%D1%8C%D1%88%D0%B0%D1%8F%20%D0%9A%D0%BE%D0%BD%D1%8E%D1%88%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F%20%D1%83%D0%BB%D0%B8%D1%86%D0%B0%2C%20%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3%2C%20%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%20%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3%2C%20%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F%20%D0%B4%2019&key=AIzaSyAvxPjhUkd0jxNyWSUtcef2Vk272bgsJzo" allowfullscreen>
+            
+          </iframe>  
         </div>
+        
       </div>
       <div class="feedback">
           <form action="#" method="post">
             <div class="feedback-field">
               <div class="name-field">
                 <label for="name-field">Ваше имя:</label>
-                <input type="text" name="e-mail" id="name-field" value="Представьтесь, пожалуйста"> </div>
+                <input type="text" name="name" id="name-field" placeholder="Представьтесь, пожалуйста"> </div>
               <div class="e-mail-field">
                 <label for="e-mail-field">Ваш e-mail:</label>
-                <input type="text" name="name" id="e-mail-field" value="Для отправки ответа"> </div>
+                <input type="text" name="e-mail" id="e-mail-field" placeholder="Для отправки ответа"> </div>
               <label for="comment-field">Текст письма:</label>
               <textarea name="comment" id="comment-field" rows="10">В свободной форме</textarea>
             </div>
