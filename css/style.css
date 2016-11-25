@@ -574,7 +574,6 @@ h2 {
   margin-top: 20px;
 }
 
-
 .slide-1 {
   display: none;
   width: 620px;
@@ -583,7 +582,6 @@ h2 {
 }
 
 .slide-2 {
-  display: none;
   width: 620px;
   height: 266px;
   background: #63482e url("../img/slider2.jpg") no-repeat;
@@ -591,11 +589,14 @@ h2 {
 
 .slide-2-show {
   display: block;
-  
 }
 
 .slide-1-show {
   display: block;
+}
+
+.hide {
+  display: none;
 }
 
 .show {
@@ -643,7 +644,6 @@ h2 {
   background: #ba2732;
 }
 
-
 .promo-bottom-left .slider-controls {
   position: absolute;
   bottom: 38px;
@@ -651,27 +651,27 @@ h2 {
   width: 60px;
   height: 10px;
   text-align: center;
-  
+  border: none;
 }
 
-.promo-bottom-left .slider-item-left {
+.slider-item-left a {
   position: absolute;
   top: 42%;
   left: 25px;
   width: 30px;
   height: 46px;
   background: url("../img/icon-left-slider.png") no-repeat;
- 
+  cursor: pointer;
 }
 
-.promo-bottom-left .slider-item-right {
+.slider-item-right a {
   position: absolute;
   top: 42%;
   right: 12px;
   width: 30px;
   height: 46px;
   background: url("../img/icon-right-slider.png") no-repeat;
-  
+  cursor: pointer;
 }
 
 .slide a {
@@ -681,26 +681,31 @@ h2 {
   padding-right: 45px;
 }
 
-
-
-.slider-controls button {
+.slider-controls span {
   display: inline-block;
-  width: 6px;
-  height: 6px;
   margin: 0 3px;
   vertical-align: top;
-  background: #ffffff;
-  border: 3px solid #ffffff;
-  vertical-align: top;
+}
+
+.full {
+  width: 6px;
+  height: 6px;
+  background: #ee3643;
+  border: 2px solid #ffffff;
   border-radius: 50%;
-  cursor: pointer;
+}
+
+.empty {
+  width: 6px;
+  height: 6px;
+  background: #ffffff;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
 }
 
 .slider-controls .active {
   background: #ee3643;
 }
-
-
 
 .promo-bottom-right {
   float: right;
@@ -981,22 +986,30 @@ h3 {
 }
 
 .list ul {
+  position: relative;
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
 
+.list ul::after {
+  content: "";
+  position: absolute;
+  top: -44px;
+  right: -2px;
+  width: 12px;
+  height: 252px;
+  background: url(../img/stick.png) no-repeat;
+}
+
 .list a {
   display: block;
-  border-bottom: 1px solid #293449;
-  background-color: #32425c;
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 24px;
   font-family: "Cuprum", "Arial", sans-serif;
   font-size: 21px;
   line-height: 30px;
-  color: #ffffff;
   text-decoration: none;
 }
 
@@ -1004,9 +1017,16 @@ h3 {
   background-color: #293449;
 }
 
-.list .active {
+.white {
   color: #32425c;
   background: #ffffff;
+  border: none;
+}
+
+.blue {
+  border-bottom: 1px solid #293449;
+  background-color: #32425c;
+  color: #ffffff;
 }
 
 .services-top p {
@@ -1026,10 +1046,11 @@ h3 {
   font-size: 13px;
   line-height: 24px;
   color: #000000;
-  padding-bottom: 50px;
+  padding-bottom: 0px;
 }
 
 .slide1 {
+  display: none;
   background: url("../img/service-car.png") no-repeat 150px 24px;
   height: 285px;
 }
@@ -1037,13 +1058,21 @@ h3 {
 .slide2 {
   display: none;
   background: url("../img/service-guarantee.png") no-repeat 225px 0;
-  height: 280px;
+  height: 285px;
 }
 
 .slide3 {
   display: none;
   background: url("../img/service-credit.png") no-repeat 110px 0;
-  height: 280px;
+  height: 285px;
+}
+
+.exhibit {
+  display: block;
+}
+
+.mask {
+  display: none;
 }
 
 .information-left {
@@ -1164,7 +1193,7 @@ h3 {
 .feedback {
   display: none;
   position: absolute;
-  top: 50%;
+  top: 0;
   left: 50%;
   width: 625px;
   height: 442px;
@@ -1187,20 +1216,27 @@ h3 {
     transform: scaleY(-5000px);
   }
 }
-  
+
 .feedback-show {
   display: block;
   animation: creep-out 0.9s;
 }
 
 @keyframes shape {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0);
   }
-  20%, 50%, 70%, 90% {
+  20%,
+  50%,
+  70%,
+  90% {
     transform: translateY(-70px);
   }
-  20%, 40%, 60%, 80% {
+  20%,
+  40%,
+  60%,
+  80% {
     transform: translateY(50px);
   }
 }
@@ -1892,6 +1928,14 @@ a.last {
   border-radius: 6px;
 }
 
+.producer:hover label::before {
+  border: 2px solid #b5b5b5;
+}
+
+.producer:active label::before {
+  opacity: 0.3;
+}
+
 .producer input[type=checkbox]:checked + label::before {
   content: "";
   display: inline-block;
@@ -1948,6 +1992,15 @@ a.last {
   background: #ffffff;
   border: 3px solid #c1c1c1;
   border-radius: 50%;
+}
+
+.power:hover label::before {
+  border: 3px solid #b5b5b5;
+}
+
+.power:active label::before {
+  border: 3px solid #b5b5b5;
+  opacity: 0.3;
 }
 
 .power input[type=radio]:checked + label::before {
